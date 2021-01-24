@@ -1,0 +1,106 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Presentation {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+        <!-- Hero -->
+        <section class="section section bg-primary pb-11 pb-lg-12 text-white overflow-hidden z-2">
+            <div class="container z-2">
+                <div class="row justify-content-center text-center pt-6 pb-3" role="banner">
+                    <div class="col-12 col-md-8">
+                        <h1 class="display-1 font-weight-light mb-3">Pixel<span class="pixel-pro-badge font-weight-bolder text-primary">LITE</span></h1>
+                        <p class="lead px-xl-6 mb-5">
+                            Copier Jinja coded by Sm0ke
+                        </p>
+                        <div class="d-flex flex-column flex-wrap flex-md-row mb-5 justify-content-center align-items-center">
+                            <a href="/presentation.html" 
+                               class="btn btn-tertiary mb-3 mt-2 mr-2 mr-md-3 animate-up-2">
+                               Presentation</a>
+                        </div>
+                        <a href="https://themesberg.com" target="_blank" class="d-flex justify-content-center flex-column mb-6">
+                            <img src="https://appsrv1-147a1.kxcdn.com/pixel-lite/img/themesberg.svg" height="25" class="mb-3" alt="Themesberg Logo">
+                            <span class="text-muted font-small"> &copy; Themesberg - coded by AppSeed.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
+                <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+                   <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <div class="section py-0">
+            <div class="container mt-n10 mt-lg-n12 z-2">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10"><img src="https://appsrv1-147a1.kxcdn.com/pixel-lite/img/presentation-mockup.png" alt="Pixel Lite Presentation Mockup"></div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="section section-lg bg-soft">
+            <div class="container">
+                <div class="row justify-content-center text-center text-dark mb-5">
+                    <div class="col-lg-9 col-xl-8">
+                        <h2 class="h1 font-weight-light mb-3">
+                            Try it!
+                        </h2>
+                        <p class="lead">
+                            Note: Python3 should be properly installed and accessible via the terminal.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-6">
+                    <div class="col-md-10 col-xl-9">
+                        <div class="position-relative">
+                            <div class="rounded bg-dark p-4 text-white mb-2">
+                                <div class="mb-3">
+                                    <div class="text-muted"># Install copier</div>
+                                    <div class="font-weight-normal">$ pip install copier</div>                                    
+                                </div>
+                                <div class="mb-3">
+                                    <div class="text-muted"># Generate the template using syntax: copier SOURCE DESTINATION</div>
+                                    <div class="text-muted"># copier &lt; SOURCE &gt; &lt; DESTINATION &gt; </div>
+                                    <div class="font-weight-normal">$ copier https://github.com/app-generator/copier-jinja.git &lt; PROJECT_NAME &gt; </div>                                    
+                                </div>
+                                <div class="mb-3">
+                                    <div class="text-muted">Follow the instructions provided in the (generated) README:</div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="text-muted">#1 - Install dependencies</div>
+                                    <div class="font-weight-normal">$ virtualenv env</div>                                    
+                                    <div class="font-weight-normal">$ source env/bin/activate</div>                                    
+                                    <div class="font-weight-normal">$ pip3 install -r requirements.txt</div>                                    
+                                </div>
+                                <div class="mb-3">
+                                    <div class="text-muted">#2 - Set up environment</div>
+                                    <div class="font-weight-normal">$ export FLASK_APP=run.py</div>                                    
+                                    <div class="font-weight-normal">$ export FLASK_ENV=development</div>                                    
+                                </div>
+                                <div class="mb-3">
+                                    <div class="text-muted">#3 - Start the application</div>
+                                    <div class="font-weight-normal">$ flask run</div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-dark position-relative mt-4"><span class="fas fa-question-circle mr-2">
+                            </span> 
+                                Issues? Use Github (issues tracker) to report a bug or join 
+                                <a class="text-white font-weight-bold text-underline" href="https://discord.gg/fZC6hup" target="_blank">Discord</a> - 24/7 LIVE Service.
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include 'includes/free-vs-pro.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
